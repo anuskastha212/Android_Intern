@@ -24,6 +24,18 @@ public class MainActivity extends AppCompatActivity{
             String username = etUsername.getText().toString();
             String password = etPassword.getText().toString();
 
+            if(username.isEmpty())
+            {
+                etUsername.setError("Enter username");
+                return;
+            }
+
+            if(password.isEmpty())
+            {
+                etPassword.setError("Enter password");
+                return;
+            }
+
             if(username.equals("admin") && password.equals("1234"))
             {
                 Toast.makeText(MainActivity.this,

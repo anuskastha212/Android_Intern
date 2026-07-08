@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/esewa_logo"
+                    android:contentDescription="@string/esewa_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+                <ImageView
+                    android:id="@+id/img_market"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/market"
+                    android:contentDescription="@string/market"
+                    app:layout_constraintStart_toEndOf="@+id/img_logo"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_logo"
+                    android:layout_marginStart="8dp"/>
+
+                <ImageView
+                    android:id="@+id/img_bell"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/noti_bell"
+                    android:contentDescription="@string/noti_bell"
+                    app:layout_constraintTop_toTopOf="@+id/img_logo"
+                    app:layout_constraintBottom_toBottomOf="@id/img_bell"
+                    app:layout_constraintStart_toEndOf="@id/img_market"
+                    android:layout_marginStart="120dp"/>
+
+                <ImageView
+                    android:id="@+id/img_option"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/option"
+                    android:contentDescription="@string/option"
+                    app:layout_constraintTop_toTopOf="@+id/img_logo"
+                    app:layout_constraintBottom_toBottomOf="@id/img_bell"
+                    app:layout_constraintStart_toEndOf="@id/img_bell"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

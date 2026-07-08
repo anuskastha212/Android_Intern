@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectEsewa</string>
+    <string name="esewa_logo">eSewa logo</string>
+    <string name="market">market</string>
+    <string name="noti_bell">noti_bell</string>
+    <string name="option">option</string>
+</resources>

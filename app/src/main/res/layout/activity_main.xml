@@ -52,14 +52,14 @@
 
                 <ImageView
                     android:id="@+id/img_bell"
-                    android:layout_width="50dp"
+                    android:layout_width="120dp"
                     android:layout_height="30dp"
                     android:src="@drawable/noti_bell"
                     android:contentDescription="@string/noti_bell"
                     app:layout_constraintTop_toTopOf="@+id/img_logo"
                     app:layout_constraintBottom_toBottomOf="@id/img_bell"
                     app:layout_constraintStart_toEndOf="@id/img_market"
-                    android:layout_marginStart="120dp"/>
+                    android:layout_marginStart="100dp"/>
 
                 <ImageView
                     android:id="@+id/img_option"
@@ -72,8 +72,58 @@
                     app:layout_constraintStart_toEndOf="@id/img_bell"
                     app:layout_constraintEnd_toEndOf="parent" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/john"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/John"
+                android:textSize="11sp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounded_edittext"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/search"
+                    android:contentDescription="@string/searchbar"
+                    />
+
+                <EditText
+                    android:id="@+id/search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="@string/what_are_you_searching_for"
+                    android:paddingHorizontal="12dp"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="14sp"
+                    android:imeOptions="actionSearch"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/filter"
+                    android:contentDescription="@string/filtericon"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

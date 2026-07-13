@@ -2,10 +2,11 @@
     <string name="app_name">ProjectEsewa</string>
     <string name="esewa_logo">eSewa logo</string>
     <string name="market">market</string>
-    <string name="noti_bell">noti_bell</string>
+    <string name="notification_bell">noti_bell</string>
     <string name="option">option</string>
     <string name="John">Goodmorning <b>John</b>, Everything you will discover here</string>
     <string name="searchbar">searchbar</string>
     <string name="what_are_you_searching_for">What are you searching for?</string>
-    <string name="filtericon">filterIcon</string>
+    <string name="filter_icon">filterIcon</string>
+    <string name="categories">Categories</string>
 </resources>
